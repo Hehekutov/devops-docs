@@ -2,8 +2,7 @@
 
 
 def format_status(version: str, deployed: bool) -> str:
-    """Возвращает состояние публикации указанной версии."""
-    details = "temporary"
+    """Формирует текст с версией и состоянием публикации."""
     state = "deployed" if deployed else "draft"
     return f"{version}: {state}"
 
